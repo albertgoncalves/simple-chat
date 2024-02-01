@@ -1,0 +1,7 @@
+*
+!.gitignore
+
+!*.toml
+
+!src/
+!*.rs
