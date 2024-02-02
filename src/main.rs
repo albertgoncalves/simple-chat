@@ -61,6 +61,7 @@ fn server(receiver: Receiver<Comm>) {
                         continue;
                     }
                     stream.as_ref().write_all(message.as_bytes()).unwrap();
+                    stream.as_ref().flush().unwrap();
                 }
                 println!("{message}", message = message.trim_end());
             }
